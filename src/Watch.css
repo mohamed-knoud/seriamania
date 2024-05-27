@@ -1,0 +1,49 @@
+
+
+  #info{
+    display:flex;
+    margin:50px 0 0 100px;
+  }
+
+  img{
+    margin-right:30px;
+    width:250px;
+    aspect-ratio:2/3;
+    border-radius:15px;
+    margin-bottom: 20px;
+  }
+
+  #info2{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+  }
+
+  #info2 h1,#info2 >span,#info2 div{
+    margin-bottom:20px;
+    color:white;
+  }
+
+  #overview{
+    width:95%;
+    color:white;
+  }
+
+  .genre{
+    color:black;
+    background-color:white;
+    padding:10px 5px;
+    margin-right:10px;
+    outline:none;
+    border-radius:6px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    #info {
+    flex-direction: column;
+    align-items: center;
+    margin:10px 0 0 10px;
+    }
+  }
+
+  
