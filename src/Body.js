@@ -19,7 +19,6 @@ function Body() {
         try {
           const response = await axios.get('https://api.themoviedb.org/3/tv/popular',options);
           setData(response.data.results);
-          console.log(response.data.results)
         } catch (error) {
           console.error('Error fetching data:', error);
         }
@@ -31,7 +30,6 @@ function Body() {
         try {
           const response = await axios.get('https://api.themoviedb.org/3/trending/tv/week',options);
           setData2(response.data.results);
-          console.log(response.data.results)
         } catch (error) {
           console.error('Error fetching data:', error);
         }
