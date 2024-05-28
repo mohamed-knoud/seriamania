@@ -51,6 +51,7 @@ function Watch() {
           for (let i = 0; i < data.seasons[season].episode_count; i++) {
             elements.push(<option onClick={handleChange2} key={i}>{i+1}</option>);
           }
+    console.log(elements)
     }
   }, [data, season]);
       const handleChange2 = (event)=>{
