@@ -35,7 +35,7 @@ function Watch() {
     
         return () => {
         };
-      }, [data]); 
+      }, []); 
 
       const handleChange1 = (event)=>{
         setSeason(event.target.value)
