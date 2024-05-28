@@ -74,9 +74,9 @@ function Watch() {
     </div>
     <div style={{marginBottom:'40px',padding:'10px',textAlign:'center',width:'100%',margin:'auto',marginTop:'20px'}}>
         <label style={{color:'white'}} for='season'>Season :  </label><select id="season" value={season}>{
-    (data!==null)?data.seasons.map((season,index)=>{
+    (data!==null) && data.seasons.map((season,index)=>{
         <option onClick={handleChange1}>{index+1}</option>
-    }):""
+    })
         }</select>
         <label style={{color:'white'}} for='episode'>Episode :  </label><select id="episode" value={episode}>{elements}</select>
     </div>
