@@ -39,7 +39,7 @@ function Watch() {
       }, []); 
 
       const handleChange1 = (event)=>{
-        setSeason(event.target.value-1)
+        setSeason(event.target.value)
         setNumberOfEpisodes(data.seasons[season].episode_count)
         console.log(data.seasons[season].episode_count)
           
