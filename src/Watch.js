@@ -73,12 +73,12 @@ function Watch() {
 )}
     </div>
     <div style={{marginBottom:'40px',padding:'10px',textAlign:'center',width:'100%',margin:'auto',marginTop:'20px'}}>
-        <label style={{color:'white'}} for='season'>Season :  </label><select value={season}>{
+        <label style={{color:'white'}} for='season'>Season :  </label><select id="season" value={season}>{
     data.seasons.map((season,index)=>{
         <option onClick={handleChange1}>{index+1}</option>
     })
         }</select>
-        <label style={{color:'white'}} for='episode'>Episode :  </label><select value={episode}>{elements}</select>
+        <label style={{color:'white'}} for='episode'>Episode :  </label><select id="episode" value={episode}>{elements}</select>
     </div>
     <div style={{ backgroundColor:'rgb(20,20,20)',width:'350px',borderRadius:'10px',padding:'10px 0',margin:'auto',textAlign:'center',marginBottom:'20px',marginTop:"20px"}}>
         <span onClick={()=>{setSrc(`https://vidsrc.icu/embed/tv/`)}} style={{cursor:'pointer',color:'rgb(120,120,120)',fontWeight:'bold',marginRight:'20px'}}>VidSrc</span>
