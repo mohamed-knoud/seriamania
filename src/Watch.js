@@ -49,7 +49,7 @@ function Watch() {
       setNumberOfEpisodes(data.seasons[season].episode_count);
       elements = [];
           for (let i = 0; i < data.seasons[season].episode_count; i++) {
-            elements.push(<option onClick={handleChange2} key={i}>{i}</option>);
+            elements.push(<option onClick={handleChange2} key={i}>{i+1}</option>);
           }
     }
   }, [data, season]);
