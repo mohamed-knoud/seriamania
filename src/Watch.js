@@ -42,7 +42,7 @@ function Watch() {
         setSeason(event.target.value)
         setNumberOfEpisodes(data.seasons[season].episode_count)
         console.log(data.seasons[season].episode_count)
-          
+        console.log(season)
       }
     useEffect(() => {
     if (data && season !== "") {
