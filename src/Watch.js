@@ -25,6 +25,7 @@ function Watch() {
             }
             const result = await response.json();
             setData(result);
+            setNumberOfEpisodes(data.seasons[0].episode_count)
             console.log(result)
           } catch (error) {
             console.log(error)
@@ -73,11 +74,11 @@ function Watch() {
 )}
     </div>
     <div style={{marginBottom:'40px',padding:'10px',textAlign:'center',width:'100%',margin:'auto',marginTop:'20px'}}>
-        <label style={{color:'white'}} for='season'>Season :  </label><select id="season" value={season}>{
-    (data!==null) && data.seasons.map((season,index)=>{
-        <option key={index} onClick={handleChange1}>{index+1}</option>
-    })
-        }</select>
+        <label style={{color:'white'}} for='season'>Season :  </label><select id="season" value={season} onChange={handleChange1}>
+        {data !== null && data.seasons.map((season, index) => (
+          <option key={index} value={index + 1}>{index + 1}</option>
+        ))}
+      </select>
         <label style={{color:'white'}} for='episode'>Episode :  </label><select id="episode" value={episode}>{elements}</select>
     </div>
     <div style={{ backgroundColor:'rgb(20,20,20)',width:'350px',borderRadius:'10px',padding:'10px 0',margin:'auto',textAlign:'center',marginBottom:'20px',marginTop:"20px"}}>
