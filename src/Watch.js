@@ -70,7 +70,7 @@ function Watch() {
     <img src={`https://image.tmdb.org/t/p/original${data.poster_path}`} alt={data.original_name}/>
     <div id="info2">
         <h1>{data.original_name}</h1>
-        <span>{data.tagline}</span>
+        <span style={{fontStyle:'italic'}}>{data.tagline}</span>
         <span>First air date : {data.first_air_date}</span>
         <div>Genres : {data.genres.map((element, index) => (
                 <span className='genre' key={index}>{element.name}</span>
