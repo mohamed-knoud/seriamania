@@ -8,7 +8,7 @@ function Watch() {
     const [season,setSeason] = useState(1)
     const [src,setSrc] = useState(`https://vidsrc.icu/embed/tv/`)
     const [numberOfEpisodes,setNumberOfEpisodes] = useState(null)
-    const elements = [];
+    let elements = [];
     const options = {
         method: 'GET',
         headers: {
