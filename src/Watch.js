@@ -25,7 +25,7 @@ function Watch() {
             }
             const result = await response.json();
             setData(result);
-            setNumberOfEpisodes(data.seasons[0].episode_count)
+            setNumberOfEpisodes(result.seasons[0].episode_count)
             console.log(result)
           } catch (error) {
             console.log(error)
