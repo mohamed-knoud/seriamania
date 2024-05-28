@@ -8,7 +8,7 @@ function Watch() {
     const [season,setSeason] = useState(1)
     const [src,setSrc] = useState(`https://vidsrc.icu/embed/tv/`)
     const [numberOfEpisodes,setNumberOfEpisodes] = useState(null)
-    let elements = [];
+    const [elements, setElements] = useState([]);
     const options = {
         method: 'GET',
         headers: {
@@ -47,11 +47,13 @@ function Watch() {
     useEffect(() => {
     if (data && season !== "") {
       setNumberOfEpisodes(data.seasons[season].episode_count);
-      elements = [];
+      const episodes = [];
           for (let i = 0; i < data.seasons[season].episode_count; i++) {
-            elements.push(<option onClick={handleChange2} key={i}>{i+1}</option>);
-          }
+                episodes.push(<option key={i}>{i + 1}</option>);
+              }
     console.log(elements)
+              setElements(episodes);
+
     }
   }, [data, season]);
       const handleChange2 = (event)=>{
