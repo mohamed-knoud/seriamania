@@ -8,6 +8,7 @@ function Watch() {
     const [season,setSeason] = useState(1)
     const [src,setSrc] = useState(`https://vidsrc.icu/embed/tv/`)
     const [numberOfEpisodes,setNumberOfEpisodes] = useState(null)
+    const elements = [];
     const options = {
         method: 'GET',
         headers: {
@@ -38,11 +39,10 @@ function Watch() {
 
       const handleChange1 = (event)=>{
         setSeason(event.target.value)
-        setNumberOfEpisodes(result.seasons[season].episode_count)
-           const elements = [];
+        setNumberOfEpisodes(data.seasons[season].episode_count)
 
-          for (let i = 0; i < result.seasons[season].episode_count; i++) {
-            elements.push(<option onClick={handlChange2} key={i}>{i}</option>);
+          for (let i = 0; i < data.seasons[season].episode_count; i++) {
+            elements.push(<option onClick={handleChange2} key={i}>{i}</option>);
           }
       }
       const handleChange2 = (event)=>{
