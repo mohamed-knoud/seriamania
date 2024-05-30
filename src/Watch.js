@@ -51,6 +51,7 @@ function Watch() {
       }
     useEffect(() => {
     if (data && season !== "") {
+        setSeason(season)
       setNumberOfEpisodes(data.seasons[season].episode_count);
       const episodes = [];
           for (let i = 0; i < data.seasons[season].episode_count; i++) {
