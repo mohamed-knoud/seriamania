@@ -44,14 +44,14 @@ function Watch() {
       }, []); 
 
       const handleChange1 = (event)=>{
-        setSeason(event.target.value)
-        setNumberOfEpisodes(data.seasons[season].episode_count)
+        const selectedSeason = event.target.value;
+          setSeason(selectedSeason);
+          setNumberOfEpisodes(data.seasons[selectedSeason].episode_count);
         console.log(data.seasons[season].episode_count)
         console.log(season)
       }
     useEffect(() => {
     if (data && season !== "") {
-        setSeason(season)
       setNumberOfEpisodes(data.seasons[season].episode_count);
       const episodes = [];
           for (let i = 0; i < data.seasons[season].episode_count; i++) {
