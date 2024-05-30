@@ -87,7 +87,7 @@ function Watch() {
         <label style={{color:'white'}} for='season'>Season :  </label><select id="season" value={season} onChange={handleChange1}>
             {data !== null && data.seasons.map((season, index) => (
                 season.season_number !== 0 ? (
-                    <option key={index} value={(data.seasons[0].season_number===1)?index:index+1}>{(data.seasons[0].season_number===1)?index:index+1}</option>
+                    <option key={index} value={(data.seasons[0].season_number!==1)?index:index+1}>{(data.seasons[0].season_number!==1)?index:index+1}</option>
                 ) : null
             ))}
       </select>
