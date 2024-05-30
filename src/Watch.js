@@ -26,6 +26,11 @@ function Watch() {
             const result = await response.json();
             setData(result);
             setNumberOfEpisodes(result.seasons[0].episode_count)
+              if(result.seasons[0].season_number===1){
+                  setSeason(0)
+              }else{
+                  setSeason(1)
+              }
             console.log(result)
           } catch (error) {
             console.log(error)
