@@ -107,7 +107,7 @@ function Watch() {
     </div>
     <div style={{textAlign:'center'}}>
     <iframe
-            src={(src==='https://multiembed.mov/?video_id=')?`${src}${tvseriesid}&tmdb=1&s=${(data.seasons[0].season_number===1)?season:season+1}&e=${episode}`:`${src}${tvseriesid}/${(data.seasons[0].season_number===1)?season:season+1}/${episode}`}
+            src={(src==='https://multiembed.mov/?video_id=')?`${src}${tvseriesid}&tmdb=1&s=${(data !== null && data.seasons[0].season_number===1)?season:season+1}&e=${episode}`:`${src}${tvseriesid}/${(data !== null && data.seasons[0].season_number===1)?season:season+1}/${episode}`}
             referrerPolicy="origin"
             allowFullScreen
             height="550"
