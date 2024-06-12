@@ -3,7 +3,17 @@
   #info{
     display:flex;
     margin:50px 0 0 100px;
+    animation: fade 1s ease-in; /* Animation name, duration, iteration count, and direction */
   }
+
+@keyframes fade {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
 
   img{
     margin-right:30px;
