@@ -6,7 +6,7 @@
     animation: fade 1s ease-in; /* Animation name, duration, iteration count, and direction */
   }
 #servers span:hover{
-  background-color:#444444;
+  background-color:#000;
 }
 @keyframes fade {
         0% {
