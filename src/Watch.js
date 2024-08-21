@@ -73,7 +73,7 @@ function Watch() {
     <div id="info">
 {data !== null ? (
     <>
-    <img src={`https://image.tmdb.org/t/p/original${data.poster_path}`} alt={data.original_name}/>
+    <p id="centered"><img src={`https://image.tmdb.org/t/p/original${data.poster_path}`} alt={data.original_name}/></p>
     <div id="info2">
         <h1 style={{fontWeight: '900'}}>{data.original_name}</h1>
         <span style={{fontStyle:'italic',fontWeight: '900'}}>{data.tagline}</span>
