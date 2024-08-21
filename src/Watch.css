@@ -66,6 +66,9 @@
     #centered{
       text-align:center;
     }
+    img{
+      margin-right:none;
+    }
   }
 
 /* Style the select element */
