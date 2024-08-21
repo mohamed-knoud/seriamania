@@ -22,6 +22,7 @@
     }
 
   img{
+    margin-right:30px;
     width:250px;
     aspect-ratio:2/3;
     border-radius:15px;
@@ -64,6 +65,9 @@
     }
     #centered{
       text-align:center;
+    }
+    img{
+          margin-right:0px;
     }
   }
 
