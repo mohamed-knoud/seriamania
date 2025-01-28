@@ -1,8 +1,10 @@
-import Navbar from "./Navbar";
-import Body from "./Body";
-import Watch from "./Watch";
 import { Routes, Route } from "react-router-dom";
-import Search from "./Search";
+
+const Navbar = React.lazy(() => import('./Navbar'));
+const Body = React.lazy(() => import('./Body'));
+const Watch = React.lazy(() => import('./Watch'));
+const Search = React.lazy(() => import('./Search'));
+
 function App() {
   return (
     <>
