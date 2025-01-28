@@ -71,62 +71,44 @@
     }
   }
 
-/* Style the select element */
+/* Style the select box */
 select {
-  /* Define the width */
-  /* Define the height */
-  height: 30px;
-  /* Add padding */
-  padding: 5px;
-  /* Customize the border */
-  border: 1px solid #ccc;
-  /* Add border-radius */
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
   border-radius: 5px;
-  /* Set background color */
-  background-color: #fff;
-  /* Customize the font */
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  /* Set cursor style */
-  cursor: pointer;
-  /* Define text color */
-  color: #333;
+  background-color: #f9f9f9;
+  appearance: none; /* Removes default arrow in some browsers */
+  outline: none;
+  transition: border-color 0.3s ease;
 }
 
-/* Style the options inside the select */
-select option {
-  /* Customize background color */
-  background-color: #fff;
-  /* Set text color */
-  color: #333;
-}
-
-/* Style the select when it's hovered */
+/* Hover effect for select box */
 select:hover {
-  /* Change border color */
-  border-color: #aaa;
+  border-color: #007bff;
 }
 
-/* Style the select when it's focused */
+/* Focus effect for select box */
 select:focus {
-  /* Change border color */
-  border-color: #4CAF50;
-  /* Add box shadow */
-  box-shadow: 0 0 5px rgba(0, 128, 0, 0.5);
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-select::-webkit-scrollbar {
-  width: 5px;
+/* Style the options */
+option {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  transition: background-color 0.3s ease;
 }
 
-/* Track */
-select::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-}
- 
-/* Handle */
-select::-webkit-scrollbar-thumb {
-  background: #888; 
+/* Hover effect for options */
+option:hover {
+  background-color: #f1f1f1;
+  color: #007bff;
 }
 
 /* Handle on hover */
