@@ -73,7 +73,7 @@
 
 /* Style the select box */
 select {
-  width: 200px;
+  width:auto;
   padding: 10px;
   font-size: 16px;
   border: 2px solid #ddd;
